@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title card" >
+        <h2>
+            ETCH-A-SKETCH
+        </h2>
+    </div>
+    <div class="container">
+        <div class="canvas" onmousedown="mouseDown()" onmouseup="mouseUp()">
+
+        </div>
+        <div class="controls">
+            <div class="colors">
+                <div class="color-pallete">
+                        <input type="color" name="" id="colorpicker" value="#00ffff">
+                </div>
+                <div class="draw btn" onclick="draw_start()" style="background-color: bisque">
+                    Draw
+                </div>
+                <div class="toggle-grid btn" style="background-color: bisque" onclick="toggle_grid()">
+                    Toggle Grid
+                </div>
+                <div class="rgb btn" style="background-color: bisque;" onclick="rgb_btn()">
+                    RGB
+                </div>
+                <div class="clear btn" onclick="clear_screen()">
+                Clear 
+                </div>
+            </div>
+            <div class="slidercontainer">
+                <input type="range" name="" id="slider" min="2" max="64" value="16" onchange="draw_canvas()">
+                <label for="slider" class="label_slider">
+                    16x16
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        By: Abhimanyu Solanki
+    </div>
+</body>
+</html>
